@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DigitalCraft - Premium Digital Solutions</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo" onclick="showPage('home')">DigitalCraft</a>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" onclick="showPage('home')"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              >About <span class="dropdown-icon">▼</span></a
+            >
+            <div class="dropdown">
+              <a href="#" class="dropdown-item" onclick="showPage('team')"
+                >Our Team</a
+              >
+              <a href="#" class="dropdown-item" onclick="showPage('mission')"
+                >Mission & Vision</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              >Services <span class="dropdown-icon">▼</span></a
+            >
+            <div class="dropdown">
+              <a href="#" class="dropdown-item" onclick="showPage('web-design')"
+                >Web Design</a
+              >
+              <a
+                href="#"
+                class="dropdown-item"
+                onclick="showPage('development')"
+                >Development</a
+              >
+              <a href="#" class="dropdown-item" onclick="showPage('marketing')"
+                >Digital Marketing</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" onclick="showPage('portfolio')"
+              >Portfolio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" onclick="showPage('blog')">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" onclick="showPage('contact')"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+      </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Premium Digital Solutions</h1>
+            <p>
+              Transform your business with our cutting-edge web design,
+              development, and digital marketing services
+            </p>
+            <div class="cta-buttons">
+              <a href="#" class="btn btn-primary" onclick="showPage('contact')"
+                >Get Started</a
+              >
+              <a
+                href="#"
+                class="btn btn-secondary"
+                onclick="showPage('portfolio')"
+                >View Portfolio</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <div class="section-title">
+            <h2>Why Choose DigitalCraft?</h2>
+            <p>
+              We deliver exceptional digital experiences that drive results and
+              exceed expectations
+            </p>
+          </div>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="portfolio-image">
+                <img src="images/creative_design.jpg" alt="Creative Design" />
+              </div>
+              <h3>Creative Design</h3>
+              <p>
+                Stunning visual designs that captivate your audience and reflect
+                your brand identity
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="portfolio-image">
+                <img src="images/fast_performance.jpg" alt="Fast Performance" />
+              </div>
+              <h3>Fast Performance</h3>
+              <p>
+                Lightning-fast websites optimized for speed, SEO, and user
+                experience
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="portfolio-image">
+                <img src="images/mobile.jpg" alt="Mobile First" />
+              </div>
+              <h3>Mobile First</h3>
+              <p>
+                Responsive designs that look perfect on all devices and screen
+                sizes
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="portfolio-image">
+                <img src="images/custom_website.jpg" alt="Custom Solutions" />
+              </div>
+              <h3>Custom Solutions</h3>
+              <p>
+                Tailored solutions built specifically for your business needs
+                and goals
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="portfolio-image">
+                <img src="images/data_driven.jpg" alt="Data Driven Analytics" />
+              </div>
+              <h3>Data-Driven</h3>
+              <p>Strategic decisions backed by analytics and market research</p>
+            </div>
+            <div class="feature-card">
+              <div class="portfolio-image">
+                <img src="images/support.jpg" alt="24/7 Support" />
+              </div>
+              <h3>24/7 Support</h3>
+              <p>
+                Round-the-clock support to keep your business running smoothly
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Our Team Page -->
+    <div id="team" class="page">
+      <div class="container">
+        <div class="content-section">
+          <div class="section-title">
+            <h2>Our Team</h2>
+            <p>
+              Meet the talented professionals who bring your digital vision to
+              life
+            </p>
+          </div>
+          <div class="team-grid">
+            <div class="team-member">
+              <div class="member-avatar">👨‍💼</div>
+              <h3>Alex Johnson</h3>
+              <h4>CEO & Founder</h4>
+              <p>
+                10+ years of experience leading digital transformation projects
+                for Fortune 500 companies.
+              </p>
+            </div>
+            <div class="team-member">
+              <div class="member-avatar">👩‍💻</div>
+              <h3>Sarah Chen</h3>
+              <h4>Lead Developer</h4>
+              <p>
+                Full-stack developer specializing in React, Node.js, and cloud
+                architecture solutions.
+              </p>
+            </div>
+            <div class="team-member">
+              <div class="member-avatar">👨‍🎨</div>
+              <h3>Mike Rodriguez</h3>
+              <h4>Creative Director</h4>
+              <p>
+                Award-winning designer with expertise in UI/UX design and brand
+                identity development.
+              </p>
+            </div>
+            <div class="team-member">
+              <div class="member-avatar">👩‍📈</div>
+              <h3>Emily Zhang</h3>
+              <h4>Marketing Manager</h4>
+              <p>
+                Digital marketing strategist with proven track record in SEO,
+                PPC, and social media marketing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mission & Vision Page -->
+    <div id="mission" class="page">
+      <div class="container">
+        <div class="content-section">
+          <div class="section-title">
+            <h2>Mission & Vision</h2>
+            <p>
+              Driving digital excellence through innovation, creativity, and
+              dedication
+            </p>
+          </div>
+
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+              gap: 3rem;
+              margin-top: 3rem;
+            "
+          >
+            <div>
+              <h3
+                style="
+                  color: var(--primary-color);
+                  font-size: 1.5rem;
+                  margin-bottom: 1rem;
+                "
+              >
+                🎯 Our Mission
+              </h3>
+              <p
+                style="
+                  font-size: 1.125rem;
+                  line-height: 1.8;
+                  margin-bottom: 2rem;
+                "
+              >
+                To empower businesses with innovative digital solutions that
+                drive growth, enhance user experiences, and create lasting
+                competitive advantages in the digital marketplace.
+              </p>
+
+              <h4>Core Values:</h4>
+              <ul style="margin-top: 1rem; line-height: 1.8">
+                <li>
+                  <strong>Innovation:</strong> Constantly pushing the boundaries
+                  of what's possible
+                </li>
+                <li>
+                  <strong>Quality:</strong> Delivering excellence in every
+                  project we undertake
+                </li>
+                <li>
+                  <strong>Integrity:</strong> Building trust through
+                  transparency and honest communication
+                </li>
+                <li>
+                  <strong>Collaboration:</strong> Working as partners with our
+                  clients to achieve their goals
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3
+                style="
+                  color: var(--secondary-color);
+                  font-size: 1.5rem;
+                  margin-bottom: 1rem;
+                "
+              >
+                🚀 Our Vision
+              </h3>
+              <p
+                style="
+                  font-size: 1.125rem;
+                  line-height: 1.8;
+                  margin-bottom: 2rem;
+                "
+              >
+                To be the leading digital agency that transforms businesses
+                through cutting-edge technology and creative excellence, making
+                the digital world more accessible and effective for everyone.
+              </p>
+
+              <h4>Strategic Goals:</h4>
+              <ul style="margin-top: 1rem; line-height: 1.8">
+                <li>Expand our global reach and impact</li>
+                <li>Pioneer new technologies and methodologies</li>
+                <li>Build long-term partnerships with our clients</li>
+                <li>Foster a culture of continuous learning and innovation</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            style="
+              margin-top: 4rem;
+              text-align: center;
+              padding: 2rem;
+              background: var(--bg-light);
+              border-radius: 16px;
+            "
+          >
+            <h3 style="color: var(--accent-color); margin-bottom: 1rem">
+              🏆 Our Achievements
+            </h3>
+            <div
+              style="
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 2rem;
+                margin-top: 2rem;
+              "
+            >
+              <div>
+                <h4 style="font-size: 2rem; color: var(--primary-color)">
+                  500+
+                </h4>
+                <p>Projects Completed</p>
+              </div>
+              <div>
+                <h4 style="font-size: 2rem; color: var(--secondary-color)">
+                  98%
+                </h4>
+                <p>Client Satisfaction</p>
+              </div>
+              <div>
+                <h4 style="font-size: 2rem; color: var(--accent-color)">50+</h4>
+                <p>Team Members</p>
+              </div>
+              <div>
+                <h4 style="font-size: 2rem; color: var(--primary-color)">
+                  24/7
+                </h4>
+                <p>Support Available</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Web Design Service Page -->
+    <div id="web-design" class="page">
+      <div class="container">
+        <div class="content-section">
+          <div class="section-title">
+            <h2>Web Design Services</h2>
+            <p>
+              Creating stunning, user-friendly designs that convert visitors
+              into customers
+            </p>
+          </div>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-header">
+                <h3>UI/UX Design</h3>
+                <p>Starting at $2,999</p>
+              </div>
+              <div class="service-body">
+                <p>
+                  Complete user interface and experience design tailored to your
+                  brand and audience.
+                </p>
+                <ul class="service-features">
+                  <li>User Research & Analysis</li>
+                  <li>Wireframing & Prototyping</li>
+                  <li>Visual Design & Branding</li>
+                  <li>Responsive Design</li>
+                  <li>Usability Testing</li>
+                </ul>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  onclick="showPage('contact')"
+                  >Get Quote</a
+                >
+              </div>
+            </div>
+            <div class="service-card">
+              <div class="service-header">
+                <h3>E-commerce Design</h3>
+                <p>Starting at $4,999</p>
+              </div>
+              <div class="service-body">
+                <p>
+                  Conversion-optimized online store designs that drive sales and
+                  customer loyalty.
+                </p>
+                <ul class="service-features">
+                  <li>Product Catalog Design</li>
+                  <li>Shopping Cart Optimization</li>
+                  <li>Payment Gateway Integration</li>
+                  <li>Mobile Commerce Design</li>
+                  <li>Analytics Implementation</li>
+                </ul>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  onclick="showPage('contact')"
+                  >Get Quote</a
+                >
+              </div>
+            </div>
+            <div class="service-card">
+              <div class="service-header">
+                <h3>Brand Identity</h3>
+                <p>Starting at $1,999</p>
+              </div>
+              <div class="service-body">
+                <p>
+                  Complete brand identity packages that make your business stand
+                  out from the competition.
+                </p>
+                <ul class="service-features">
+                  <li>Logo Design & Variations</li>
+                  <li>Brand Guidelines</li>
+                  <li>Color Palette & Typography</li>
+                  <li>Business Card Design</li>
+                  <li>Marketing Materials</li>
+                </ul>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  onclick="showPage('contact')"
+                  >Get Quote</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Development Service Page -->
+    <div id="development" class="page">
+      <div class="container">
+        <div class="content-section">
+          <div class="section-title">
+            <h2>Development Services</h2>
+            <p>
+              Robust, scalable web applications built with cutting-edge
+              technologies
+            </p>
+          </div>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-header">
+                <h3>Frontend Development</h3>
+                <p>Starting at $3,999</p>
+              </div>
+              <div class="service-body">
+                <p>
+                  Modern, interactive frontend applications using React, Vue.js,
+                  and Angular.
+                </p>
+                <ul class="service-features">
+                  <li>React/Vue/Angular Development</li>
+                  <li>Progressive Web Apps (PWA)</li>
+                  <li>API Integration</li>
+                  <li>Performance Optimization</li>
+                  <li>Cross-browser Compatibility</li>
+                </ul>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  onclick="showPage('contact')"
+                  >Get Quote</a
+                >
+              </div>
+            </div>
+            <div class="service-card">
+              <div class="service-header">
+                <h3>Backend Development</h3>
+                <p>Starting at $5,999</p>
+              </div>
+              <div class="service-body">
+                <p>
+                  Secure, scalable backend solutions with Node.js, Python, and
+                  cloud integration.
+                </p>
+                <ul class="service-features">
+                  <li>RESTful API Development</li>
+                  <li>Database Design & Optimization</li>
+                  <li>Cloud Infrastructure Setup</li>
+                  <li>Security Implementation</li>
+                  <li>Performance Monitoring</li>
+                </ul>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  onclick="showPage('contact')"
+                  >Get Quote</a
+                >
+              </div>
+            </div>
+            <div class="service-card">
+              <div class="service-header">
+                <h3>Full-Stack Solutions</h3>
+                <p>Starting at $8,999</p>
+              </div>
+              <div class="service-body">
+                <p>
+                  Complete web applications from concept to deployment with
+                  ongoing maintenance.
+                </p>
+                <ul class="service-features">
+                  <li>End-to-end Development</li>
+                  <li>Custom CMS Solutions</li>
+                  <li>Third-party Integrations</li>
+                  <li>Deployment & DevOps</li>
+                  <li>Ongoing Maintenance</li>
+                </ul>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  onclick="showPage('contact')"
+                  >Get Quote</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Digital Marketing Service Page -->
+    <div id="marketing" class="page">
+      <div class="container">
+        <div class="content-section">
+          <div class="section-title">
+            <h2>Digital Marketing Services</h2>
+            <p>
+              Data-driven marketing strategies that grow your business and
+              maximize ROI
+            </p>
+          </div>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-header">
+                <h3>SEO Optimization</h3>
+                <p>Starting at $1,999/month</p>
+              </div>
+              <div class="service-body">
+                <p>
+                  Comprehensive SEO strategies to improve your search rankings
+                  and organic traffic.
+                </p>
+                <ul class="service-features">
+                  <li>Keyword Research & Analysis</li>
+                  <li>On-page Optimization</li>
+                  <li>Technical SEO Audit</li>
+                  <li>Content Strategy</li>
+                  <li>Performance Reporting</li>
+                </ul>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  onclick="showPage('contact')"
+                  >Get Quote</a
+                >
+              </div>
+            </div>
+            <div class="service-card">
+              <div class="service-header">
+                <h3>PPC Advertising</h3>
+                <p>Starting at $2,499/month</p>
+              </div>
+              <div class="service-body">
+                <p>
+                  Targeted pay-per-click campaigns that deliver immediate
+                  results and high ROI.
+                </p>
+                <ul class="service-features">
+                  <li>Google Ads Management</li>
+                  <li>Facebook & Instagram Ads</li>
+                  <li>Campaign Optimization</li>
+                  <li>A/B Testing</li>
+                  <li>Conversion Tracking</li>
+                </ul>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  onclick="showPage('contact')"
+                  >Get Quote</a
+                >
+              </div>
+            </div>
+            <div class="service-card">
+              <div class="service-header">
+                <h3>Social Media Marketing</h3>
+                <p>Starting at $1,499/month</p>
+              </div>
+              <div class="service-body">
+                <p>
+                  Engaging social media campaigns that build brand awareness and
+                  community.
+                </p>
+                <ul class="service-features">
+                  <li>Content Creation & Curation</li>
+                  <li>Community Management</li>
+                  <li>Influencer Partnerships</li>
+                  <li>Social Media Advertising</li>
+                  <li>Analytics & Reporting</li>
+                </ul>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  onclick="showPage('contact')"
+                  >Get Quote</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Page -->
+    <div id="portfolio" class="page">
+      <div class="container">
+        <div class="content-section">
+          <div class="section-title">
+            <h2>Our Portfolio</h2>
+            <p>
+              Showcasing our best work and the results we've achieved for our
+              clients
+            </p>
+          </div>
+          <div class="portfolio-grid">
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <img src="images/tech_ecommerce.jpg" alt="E-commerce Project" />
+              </div>
+              <div class="portfolio-content">
+                <h3>TechStore E-commerce</h3>
+                <p>
+                  Complete e-commerce solution with advanced features and 150%
+                  increase in conversion rates.
+                </p>
+                <div style="margin-top: 1rem">
+                  <span
+                    style="
+                      background: var(--primary-color);
+                      color: white;
+                      padding: 0.25rem 0.5rem;
+                      border-radius: 4px;
+                      font-size: 0.875rem;
+                      margin-right: 0.5rem;
+                    "
+                    >E-commerce</span
+                  >
+                  <span
+                    style="
+                      background: var(--secondary-color);
+                      color: white;
+                      padding: 0.25rem 0.5rem;
+                      border-radius: 4px;
+                      font-size: 0.875rem;
+                    "
+                    >React</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <img src="images/healthcare.jpg" alt="Healthcare Dashboard" />
+              </div>
+              <div class="portfolio-content">
+                <h3>HealthCare Dashboard</h3>
+                <p>
+                  Patient management system with real-time analytics and
+                  improved workflow efficiency.
+                </p>
+                <div style="margin-top: 1rem">
+                  <span
+                    style="
+                      background: var(--accent-color);
+                      color: white;
+                      padding: 0.25rem 0.5rem;
+                      border-radius: 4px;
+                      font-size: 0.875rem;
+                      margin-right: 0.5rem;
+                    "
+                    >Healthcare</span
+                  >
+                  <span
+                    style="
+                      background: var(--primary-color);
+                      color: white;
+                      padding: 0.25rem 0.5rem;
+                      border-radius: 4px;
+                      font-size: 0.875rem;
+                    "
+                    >Vue.js</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <img src="images/education_lms.jpg" alt="EduPlatform LMS" />
+              </div>
+              <div class="portfolio-content">
+                <h3>EduPlatform LMS</h3>
+                <p>
+                  Learning management system serving 10,000+ students with
+                  interactive features.
+                </p>
+                <div style="margin-top: 1rem">
+                  <span
+                    style="
+                      background: var(--secondary-color);
+                      color: white;
+                      padding: 0.25rem 0.5rem;
+                      border-radius: 4px;
+                      font-size: 0.875rem;
+                      margin-right: 0.5rem;
+                    "
+                    >Education</span
+                  >
+                  <span
+                    style="
+                      background: var(--accent-color);
+                      color: white;
+                      padding: 0.25rem 0.5rem;
+                      border-radius: 4px;
+                      font-size: 0.875rem;
+                    "
+                    >Angular</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <img src="images/finance_app.jpg" alt="FinanceApp Mobile" />
+              </div>
+              <div class="portfolio-content">
+                <h3>FinanceApp Mobile</h3>
+                <p>
+                  Secure banking application with biometric authentication and
+                  real-time transactions.
+                </p>
+                <div style="margin-top: 1rem">
+                  <span
+                    style="
+                      background: var(--primary-color);
+                      color: white;
+                      padding: 0.25rem 0.5rem;
+                      border-radius: 4px;
+                      font-size: 0.875rem;
+                      margin-right: 0.5rem;
+                    "
+                    >Finance</span
+                  >
+                  <span
+                    style="
+                      background: var(--secondary-color);
+                      color: white;
+                      padding: 0.25rem 0.5rem;
+                      border-radius: 4px;
+                      font-size: 0.875rem;
+                    "
+                    >React Native</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <img
+                  src="images/food_delivery.jpg"
+                  alt="FoddDelivery Platform"
+                />
+              </div>
+              <div class="portfolio-content">
+                <h3>FoodDelivery Platform</h3>
+                <p>
+                  Multi-vendor food delivery platform with real-time tracking
+                  and payment integration.
+                </p>
+                <div style="margin-top: 1rem">
+                  <span
+                    style="
+                      background: var(--accent-color);
+                      color: white;
+                      padding: 0.25rem 0.5rem;
+                      border-radius: 4px;
+                      font-size: 0.875rem;
+                      margin-right: 0.5rem;
+                    "
+                    >Food & Beverage</span
+                  >
+                  <span
+                    style="
+                      background: var(--primary-color);
+                      color: white;
+                      padding: 0.25rem 0.5rem;
+                      border-radius: 4px;
+                      font-size: 0.875rem;
+                    "
+                    >Node.js</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <img
+                  src="images/creative_arts.jpg"
+                  alt="ECreative Agency Website"
+                />
+              </div>
+              <div class="portfolio-content">
+                <h3>Creative Agency Website</h3>
+                <p>
+                  Award-winning portfolio website with advanced animations and
+                  interactive elements.
+                </p>
+                <div style="margin-top: 1rem">
+                  <span
+                    style="
+                      background: var(--secondary-color);
+                      color: white;
+                      padding: 0.25rem 0.5rem;
+                      border-radius: 4px;
+                      font-size: 0.875rem;
+                      margin-right: 0.5rem;
+                    "
+                    >Creative</span
+                  >
+                  <span
+                    style="
+                      background: var(--accent-color);
+                      color: white;
+                      padding: 0.25rem 0.5rem;
+                      border-radius: 4px;
+                      font-size: 0.875rem;
+                    "
+                    >Three.js</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog Page -->
+    <div id="blog" class="page">
+      <div class="container">
+        <div class="content-section">
+          <div class="section-title">
+            <h2>Latest Blog Posts</h2>
+            <p>
+              Stay updated with the latest trends, tips, and insights in digital
+              technology
+            </p>
+          </div>
+          <div class="blog-grid">
+            <article class="blog-card">
+              <div class="blog-image">
+                <img
+                  src="images/mobile_first.jpg"
+                  alt="Future of Mobile Firt technology"
+                />
+              </div>
+              <div class="blog-content">
+                <div class="blog-meta">December 15, 2024 • Web Design</div>
+                <h3>The Future of Mobile-First Design</h3>
+                <p>
+                  Exploring the latest trends in mobile-first design and how
+                  they're reshaping user experiences across all devices.
+                </p>
+                <a
+                  href="#"
+                  style="color: var(--primary-color); font-weight: 600"
+                  >Read More →</a
+                >
+              </div>
+            </article>
+            <article class="blog-card">
+              <div class="blog-image">
+                <img src="images/website_opt.jpg" alt="Optimizing Website" />
+              </div>
+              <div class="blog-content">
+                <div class="blog-meta">December 12, 2024 • Development</div>
+                <h3>Optimizing Website Performance in 2024</h3>
+                <p>
+                  Essential techniques and tools for improving website speed and
+                  performance metrics that matter most.
+                </p>
+                <a
+                  href="#"
+                  style="color: var(--primary-color); font-weight: 600"
+                  >Read More →</a
+                >
+              </div>
+            </article>
+            <article class="blog-card">
+              <div class="blog-image">
+                <img src="images/seo_strategies.jpg" alt="SEO Strategies" />
+              </div>
+              <div class="blog-content">
+                <div class="blog-meta">December 10, 2024 • Marketing</div>
+                <h3>SEO Strategies That Actually Work</h3>
+                <p>
+                  Data-driven SEO strategies that have proven successful in
+                  improving search rankings and organic traffic.
+                </p>
+                <a
+                  href="#"
+                  style="color: var(--primary-color); font-weight: 600"
+                  >Read More →</a
+                >
+              </div>
+            </article>
+            <article class="blog-card">
+              <div class="blog-image">
+                <img src="images/color_psychology.jpg" alt="Color Psychology" />
+              </div>
+              <div class="blog-content">
+                <div class="blog-meta">December 8, 2024 • Design</div>
+                <h3>Color Psychology in Web Design</h3>
+                <p>
+                  How color choices influence user behavior and conversion
+                  rates, with practical examples and case studies.
+                </p>
+                <a
+                  href="#"
+                  style="color: var(--primary-color); font-weight: 600"
+                  >Read More →</a
+                >
+              </div>
+            </article>
+            <article class="blog-card">
+              <div class="blog-image">
+                <img
+                  src="images/web_security.jpg"
+                  alt="Web Security Practices"
+                />
+              </div>
+              <div class="blog-content">
+                <div class="blog-meta">December 5, 2024 • Security</div>
+                <h3>Web Security Best Practices</h3>
+                <p>
+                  Essential security measures every website owner should
+                  implement to protect against cyber threats.
+                </p>
+                <a
+                  href="#"
+                  style="color: var(--primary-color); font-weight: 600"
+                  >Read More →</a
+                >
+              </div>
+            </article>
+            <article class="blog-card">
+              <div class="blog-image">
+                <img src="images/ai_integration.jpg" alt="AI Integration" />
+              </div>
+              <div class="blog-content">
+                <div class="blog-meta">December 3, 2024 • Technology</div>
+                <h3>AI Integration in Web Development</h3>
+                <p>
+                  How artificial intelligence is transforming web development
+                  processes and creating smarter user experiences.
+                </p>
+                <a
+                  href="#"
+                  style="color: var(--primary-color); font-weight: 600"
+                  >Read More →</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+      <div class="container">
+        <div class="content-section">
+          <div class="section-title">
+            <h2>Get In Touch</h2>
+            <p>
+              Ready to start your next project? Let's discuss how we can help
+              you achieve your goals
+            </p>
+          </div>
+          <div class="contact-container">
+            <form class="contact-form" id="contactForm">
+              <h3 style="margin-bottom: 1.5rem">Send us a message</h3>
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required />
+                <div class="error-message" id="nameError"></div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required />
+                <div class="error-message" id="emailError"></div>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" />
+                <div class="error-message" id="phoneError"></div>
+              </div>
+              <div class="form-group">
+                <label for="company">Company Name</label>
+                <input type="text" id="company" name="company" />
+              </div>
+              <div class="form-group">
+                <label for="service">Service Interested In *</label>
+                <select id="service" name="service" required>
+                  <option value="">Select a service</option>
+                  <option value="web-design">Web Design</option>
+                  <option value="development">Development</option>
+                  <option value="digital-marketing">Digital Marketing</option>
+                  <option value="consultation">Consultation</option>
+                  <option value="other">Other</option>
+                </select>
+                <div class="error-message" id="serviceError"></div>
+              </div>
+              <div class="form-group">
+                <label for="budget">Budget Range</label>
+                <select id="budget" name="budget">
+                  <option value="">Select budget range</option>
+                  <option value="under-5k">Under $5,000</option>
+                  <option value="5k-10k">$5,000 - $10,000</option>
+                  <option value="10k-25k">$10,000 - $25,000</option>
+                  <option value="25k-50k">$25,000 - $50,000</option>
+                  <option value="over-50k">Over $50,000</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Project Details *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell us about your project requirements, timeline, and any specific goals you have in mind..."
+                  required
+                ></textarea>
+                <div class="error-message" id="messageError"></div>
+              </div>
+              <button type="submit" class="btn btn-primary" id="submitBtn">
+                <span id="submitText">Send Message</span>
+                <span
+                  id="submitLoader"
+                  class="loading"
+                  style="display: none"
+                ></span>
+              </button>
+              <div
+                id="successMessage"
+                class="success-message"
+                style="display: none"
+              >
+                Thank you for your message! We'll get back to you within 24
+                hours.
+              </div>
+            </form>
+
+            <div class="contact-info">
+              <h3 style="margin-bottom: 2rem">Contact Information</h3>
+              <div class="info-item">
+                <div class="info-icon">
+                  <img src="icons/address.png" alt="Address" />
+                </div>
+                <div>
+                  <strong>Address</strong><br />
+                  123 Digital Avenue<br />
+                  Tech District, Innovation City<br />
+                  IC 12345, USA
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">
+                  <img src="icons/phone.png" alt="Address" />
+                </div>
+                <div>
+                  <strong>Phone</strong><br />
+                  +1 (555) 123-4567<br />
+                  +1 (555) 987-6543
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">
+                  <img src="icons/gmail.png" alt="Address" />
+                </div>
+                <div>
+                  <strong>Email</strong><br />
+                  hello@digitalcraft.com<br />
+                  support@digitalcraft.com
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">
+                  <img src="icons/clock.png" alt="Address" />
+                </div>
+                <div>
+                  <strong>Business Hours</strong><br />
+                  Monday - Friday: 9:00 AM - 6:00 PM<br />
+                  Saturday: 10:00 AM - 4:00 PM<br />
+                  Sunday: Closed
+                </div>
+              </div>
+
+              <div>
+                <h4 style="margin: 2rem 0 1rem 0">Follow Us</h4>
+                <div class="social-links">
+                  <a href="https://x.com/" class="social-link" title="Twitter">
+                    <img src="icons/twitter.png" alt="Twitter" />
+                  </a>
+                  <a href="https://linkedin.com/" class="social-link" title="LinkedIn">
+                    <img src="icons/linkedin.png" alt="LinkedIn" />
+                  </a>
+                  <a href="https://github.com/" class="social-link" title="GitHub">
+                    <img src="icons/github.png" alt="GitHub" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>
